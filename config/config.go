@@ -1,17 +1,20 @@
 package config
 
 import (
-	"log"
-
 	"github.com/spf13/viper"
 )
 
 var (
-	HOST     = ""
-	NAME     = ""
-	USER     = ""
-	PASSWORD = ""
-	PORT     = ""
+	HOST           = ""
+	NAME           = ""
+	USER           = ""
+	PASSWORD       = ""
+	PORT           = ""
+	XML_PATH       = ""
+	ZIP_PATH       = ""
+	XML_NAME       = ""
+	ZIP_NAME       = ""
+	JSON_FILE_PATH = ""
 )
 
 func LoadConfig() {
@@ -20,5 +23,10 @@ func LoadConfig() {
 	USER = viper.GetString("DB_USER")
 	PASSWORD = viper.GetString("DB_PASSWORD")
 	PORT = viper.GetString("DB_PORT")
-	log.Println(HOST, NAME, USER, PASSWORD, PORT)
+	XML_PATH = viper.GetString("XML_PATH")
+	ZIP_PATH = viper.GetString("ZIP_PATH")
+	XML_NAME = viper.GetString("XML_NAME")
+	ZIP_NAME = viper.GetString("ZIP_NAME")
+	JSON_FILE_PATH = viper.GetString("JSON_FILE_PATH")
+
 }

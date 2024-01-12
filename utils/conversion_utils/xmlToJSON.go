@@ -9,10 +9,6 @@ import (
 	"github.com/prashant42b/elastic-search-engine-task/config"
 )
 
-// type Attorney struct {
-// 	Name string `xml:"attorney-name"`
-// }
-
 type Owner struct {
 	Name string `xml:"party-name"`
 }
@@ -72,10 +68,6 @@ func CleanAndConvert(xmlFilePath string) {
 			"class_code":          sanitize(caseFile.ClassCode),
 			"registration_date":   sanitize(caseFile.RegistrationDate),
 		}
-
-		// for _, attorney := range caseFile.AttorneyNames {
-		// 	caseData["attorney_names"] = append(caseData["attorney_names"].([]string), sanitize(attorney.Name))
-		// }
 
 		for _, owner := range caseFile.Owners {
 			caseData["owners"] = append(caseData["owners"].([]string), sanitize(owner.Name))

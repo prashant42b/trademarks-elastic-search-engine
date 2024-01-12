@@ -41,11 +41,15 @@ func HandleSerialNumberQuerySearch(c *fiber.Ctx) error {
 	// Extract the search term from the url params
 	searchTerm := c.Params("serialNumber")
 
-	// Check if the search term is provided
-	// if trademark.ID == uuid.Nil {
-	// 	return c.Status(404).JSON(fiber.Map{"status": "Not found", "message": "Trademark not found", "data": nil})
-	// }
+	if searchTerm == "" {
+		return c.Status(404).JSON(fiber.Map{"status": "Not found", "message": "Search term not provided", "data": nil})
+	}
+
 	db.Find(&trademark, "serial_number = ?", searchTerm)
+
+	if db.Error != nil {
+		return c.Status(500).JSON(fiber.Map{"status": "Internal Server Error", "message": "Error while querying the database", "data": nil})
+	}
 
 	// Return the search results
 	return c.JSON(fiber.Map{"status": "success", "message": "Search results", "data": trademark})

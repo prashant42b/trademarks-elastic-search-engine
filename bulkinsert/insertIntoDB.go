@@ -12,9 +12,10 @@ import (
 	"github.com/prashant42b/elastic-search-engine-task/internal/model"
 )
 
-var DB = database.DB
-
 func BulkInsertJsonIntoDB() {
+
+	var DB = database.DB
+	var count = 0
 
 	// Check if DB is nil
 	if DB == nil {
@@ -52,8 +53,10 @@ func BulkInsertJsonIntoDB() {
 		if err != nil {
 			log.Printf("Error inserting data for patent %s: %v", data.SerialNumber, err)
 		} else {
-			fmt.Printf("Data inserted successfully for patent %s!\n", data.SerialNumber)
+			count += 1
+			fmt.Printf("Data inserted successfully for trademark %s!\n", data.SerialNumber)
 		}
 	}
+	log.Println("total records inserted: ", count)
 
 }

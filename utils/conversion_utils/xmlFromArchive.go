@@ -5,31 +5,27 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"path/filepath"
 
 	"github.com/prashant42b/elastic-search-engine-task/config"
-	//"encoding/json"
-	//"encoding/xml"
 )
 
-func UnzipXML(zipFileName string) {
-
+func UnzipXML(zipFileName string, targetFolder string) {
 	// Path to zip file
 	zipFilePath := config.ZIP_PATH + zipFileName
 
-	// XMl file name
+	// XML file name
 	xmlFileName := config.XML_NAME
 
-	err := unzip(zipFilePath, xmlFileName)
+	err := unzip(zipFilePath, xmlFileName, targetFolder)
 
 	if err != nil {
 		fmt.Println("Error unzipping file:", err)
 		return
 	}
-
 }
 
-func unzip(zipFilePath, fileName string) error {
-
+func unzip(zipFilePath, fileName, targetFolder string) error {
 	r, err := zip.OpenReader(zipFilePath)
 	if err != nil {
 		return err
@@ -44,7 +40,8 @@ func unzip(zipFilePath, fileName string) error {
 			}
 			defer rc.Close()
 
-			outFile, err := os.Create(fileName)
+			outFilePath := filepath.Join(targetFolder, fileName)
+			outFile, err := os.Create(outFilePath)
 			if err != nil {
 				return err
 			}

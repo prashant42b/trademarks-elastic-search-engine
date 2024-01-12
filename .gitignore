@@ -1,4 +1,4 @@
 .env
 server
-
 *.xml
+*.json

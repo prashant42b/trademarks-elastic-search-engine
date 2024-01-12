@@ -2,14 +2,15 @@ package router
 
 import (
 	"github.com/gofiber/fiber/v2"
-	//"github.com/gofiber/fiber/v2/middleware/logger"
+
+	trademarkRoutes "github.com/prashant42b/elastic-search-engine-task/internal/routes"
 )
 
 func SetupRoutes(app *fiber.App) {
 
-	//api := app.Group("/api", logger.New())
+	api := app.Group("/api")
 
 	//Setup node routers
-	//noteRoutes.SetupNoteRoutes(api)
+	trademarkRoutes.SetupTrademarkRoutes(api)
 
 }

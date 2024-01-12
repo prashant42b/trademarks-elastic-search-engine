@@ -9,6 +9,8 @@ This project is a Go web application developed using the Fiber framework. It ser
 - [Usage](#usage)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
+- [Search Architecture](#search-architecture)
+  - [Flow Diagram](#flow-diagram)
 - [Features](#features)
 - [Data Source](#data-source)
 - [Extracting Data](#extracting-data)
@@ -44,6 +46,10 @@ The following prerequisites are required to run this application:
       go mod download
       go run main.go
       ```
+      
+## Search Architecture
+### Flow Diagram
+<img width="705" alt="image" src="https://github.com/prashant42b/elastic-search-engine-task/assets/63443918/0bd994b0-04ec-47ba-84aa-9a6c3afa784e">
 
 ## Features
 

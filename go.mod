@@ -1,4 +1,4 @@
-module github.com/prashant42b/elastic-search-engine-task
+module github.com/prashant42b/trademarks-elastic-search-engine
 
 go 1.21
 

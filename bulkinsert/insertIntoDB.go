@@ -7,9 +7,9 @@ import (
 	"log"
 	"time"
 
-	"github.com/prashant42b/elastic-search-engine-task/config"
-	"github.com/prashant42b/elastic-search-engine-task/database"
-	"github.com/prashant42b/elastic-search-engine-task/internal/model"
+	"github.com/prashant42b/trademarks-elastic-search-engine/config"
+	"github.com/prashant42b/trademarks-elastic-search-engine/database"
+	"github.com/prashant42b/trademarks-elastic-search-engine/internal/model"
 )
 
 func BulkInsertJsonIntoDB() {

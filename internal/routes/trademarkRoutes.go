@@ -2,7 +2,7 @@ package trademarkRoutes
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/prashant42b/elastic-search-engine-task/internal/routeHandler"
+	"github.com/prashant42b/trademarks-elastic-search-engine/internal/routeHandler"
 )
 
 func SetupTrademarkRoutes(router fiber.Router) {

@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/prashant42b/elastic-search-engine-task/config"
+	"github.com/prashant42b/trademarks-elastic-search-engine/config"
 )
 
 type Owner struct {

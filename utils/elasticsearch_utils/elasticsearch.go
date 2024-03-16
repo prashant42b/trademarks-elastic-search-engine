@@ -8,7 +8,7 @@ import (
 	"io"
 	"strconv"
 
-	"github.com/prashant42b/elastic-search-engine-task/database"
+	"github.com/prashant42b/trademarks-elastic-search-engine/database"
 )
 
 type Payload struct {

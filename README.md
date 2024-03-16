@@ -37,8 +37,8 @@ The following prerequisites are required to run this application:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/prashant42b/elastic-search-engine-task.git
-   cd elastic-search-engine-task
+   git clone https://github.com/prashant42b/trademarks-elastic-search-engine.git
+   cd trademarks-elastic-search-engine
 
    ```
 2. Run 
@@ -49,7 +49,7 @@ The following prerequisites are required to run this application:
       
 ## Search Architecture
 ### Flow Diagram
-<img width="705" alt="image" src="https://github.com/prashant42b/elastic-search-engine-task/assets/63443918/0bd994b0-04ec-47ba-84aa-9a6c3afa784e">
+<img width="705" alt="image" src="https://github.com/prashant42b/trademarks-elastic-search-engine/assets/63443918/0bd994b0-04ec-47ba-84aa-9a6c3afa784e">
 
 ## Features
 

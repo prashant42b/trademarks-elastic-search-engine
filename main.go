@@ -4,12 +4,12 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
-	"github.com/prashant42b/elastic-search-engine-task/bulkinsert"
-	"github.com/prashant42b/elastic-search-engine-task/config"
-	"github.com/prashant42b/elastic-search-engine-task/database"
-	"github.com/prashant42b/elastic-search-engine-task/router"
-	"github.com/prashant42b/elastic-search-engine-task/utils"
-	"github.com/prashant42b/elastic-search-engine-task/utils/conversion_utils"
+	"github.com/prashant42b/trademarks-elastic-search-engine/bulkinsert"
+	"github.com/prashant42b/trademarks-elastic-search-engine/config"
+	"github.com/prashant42b/trademarks-elastic-search-engine/database"
+	"github.com/prashant42b/trademarks-elastic-search-engine/router"
+	"github.com/prashant42b/trademarks-elastic-search-engine/utils"
+	"github.com/prashant42b/trademarks-elastic-search-engine/utils/conversion_utils"
 	"github.com/spf13/viper"
 )
 

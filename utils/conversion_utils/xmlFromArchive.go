@@ -7,7 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/prashant42b/elastic-search-engine-task/config"
+	"github.com/prashant42b/trademarks-elastic-search-engine/config"
 )
 
 func UnzipXML(zipFileName string, targetFolder string) {

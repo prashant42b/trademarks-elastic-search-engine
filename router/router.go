@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/gofiber/fiber/v2"
 
-	trademarkRoutes "github.com/prashant42b/elastic-search-engine-task/internal/routes"
+	trademarkRoutes "github.com/prashant42b/trademarks-elastic-search-engine/internal/routes"
 )
 
 func SetupRoutes(app *fiber.App) {

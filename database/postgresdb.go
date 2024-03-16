@@ -5,8 +5,8 @@ import (
 	"log"
 	"strconv"
 
-	"github.com/prashant42b/elastic-search-engine-task/config"
-	"github.com/prashant42b/elastic-search-engine-task/internal/model"
+	"github.com/prashant42b/trademarks-elastic-search-engine/config"
+	"github.com/prashant42b/trademarks-elastic-search-engine/internal/model"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"

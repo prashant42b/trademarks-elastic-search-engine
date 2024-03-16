@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/elastic/go-elasticsearch/v8"
-	"github.com/prashant42b/elastic-search-engine-task/config"
+	"github.com/prashant42b/trademarks-elastic-search-engine/config"
 )
 
 var esClient *elasticsearch.Client
